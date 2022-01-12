@@ -65,7 +65,6 @@ class HomeViewController: UIViewController{
         super.viewDidLoad()
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationBar.isTranslucent = false
-        self.navigationController?.navigationBar.tintColor = .white
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.title = "826 Characters"
         
@@ -76,6 +75,7 @@ class HomeViewController: UIViewController{
         }
         
         charCollectionView.register(CharCell.self, forCellWithReuseIdentifier: "CharCell")
+        charCollectionView.backgroundColor = UIColor(named: "background")
         charCollectionView.delegate = self
         charCollectionView.dataSource = self
         
@@ -108,7 +108,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         cell.layer.cornerRadius = 10
         cell.layer.borderWidth = 3
-        cell.layer.borderColor = K.rmPurple.cgColor
+        cell.layer.borderColor = UIColor(named: "border")?.cgColor
         cell.index = indexPath.row
         
         cell.delegate = self

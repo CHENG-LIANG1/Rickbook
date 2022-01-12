@@ -16,8 +16,6 @@
 		FCA02BF027437B7D00641CB4 /* Rick_diculous.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCA02BEE27437B7D00641CB4 /* Rick_diculous.xcdatamodeld */; };
 		FCA02BF227437B7E00641CB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA02BF127437B7E00641CB4 /* Assets.xcassets */; };
 		FCA02BF527437B7E00641CB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA02BF327437B7E00641CB4 /* LaunchScreen.storyboard */; };
-		FCA02C0027437B7E00641CB4 /* Rick_diculousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA02BFF27437B7E00641CB4 /* Rick_diculousTests.swift */; };
-		FCA02C0B27437B7E00641CB4 /* Rick_diculousUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA02C0A27437B7E00641CB4 /* Rick_diculousUITests.swift */; };
 		FCA02C1927437BE300641CB4 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA02C1827437BE300641CB4 /* K.swift */; };
 		FCA02C1B27437BE700641CB4 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA02C1A27437BE700641CB4 /* Tools.swift */; };
 		FCA02C1D27437D2E00641CB4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA02C1C27437D2E00641CB4 /* HomeViewController.swift */; };
@@ -66,11 +64,7 @@
 		FCA02BF427437B7E00641CB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCA02BF627437B7E00641CB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCA02BFB27437B7E00641CB4 /* Rick-diculousTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rick-diculousTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCA02BFF27437B7E00641CB4 /* Rick_diculousTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_diculousTests.swift; sourceTree = "<group>"; };
-		FCA02C0127437B7E00641CB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCA02C0627437B7E00641CB4 /* Rick-diculousUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rick-diculousUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCA02C0A27437B7E00641CB4 /* Rick_diculousUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_diculousUITests.swift; sourceTree = "<group>"; };
-		FCA02C0C27437B7E00641CB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCA02C1827437BE300641CB4 /* K.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		FCA02C1A27437BE700641CB4 /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		FCA02C1C27437D2E00641CB4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -138,8 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				FCA02BE427437B7D00641CB4 /* Rick-diculous */,
-				FCA02BFE27437B7E00641CB4 /* Rick-diculousTests */,
-				FCA02C0927437B7E00641CB4 /* Rick-diculousUITests */,
 				FCA02BE327437B7D00641CB4 /* Products */,
 				8C5A965567BD95F15B7A713A /* Pods */,
 				4DA0FD705973FFAFAE84F7B8 /* Frameworks */,
@@ -178,24 +170,6 @@
 				FCDFE66A274603E30016CD64 /* AboutViewController.swift */,
 			);
 			path = "Rick-diculous";
-			sourceTree = "<group>";
-		};
-		FCA02BFE27437B7E00641CB4 /* Rick-diculousTests */ = {
-			isa = PBXGroup;
-			children = (
-				FCA02BFF27437B7E00641CB4 /* Rick_diculousTests.swift */,
-				FCA02C0127437B7E00641CB4 /* Info.plist */,
-			);
-			path = "Rick-diculousTests";
-			sourceTree = "<group>";
-		};
-		FCA02C0927437B7E00641CB4 /* Rick-diculousUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FCA02C0A27437B7E00641CB4 /* Rick_diculousUITests.swift */,
-				FCA02C0C27437B7E00641CB4 /* Info.plist */,
-			);
-			path = "Rick-diculousUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,7 +430,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCA02C0027437B7E00641CB4 /* Rick_diculousTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +437,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCA02C0B27437B7E00641CB4 /* Rick_diculousUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,6 +19,7 @@ class AboutViewController: UIViewController {
         
         iv.layer.cornerRadius = 20
         iv.layer.borderWidth = 10
+        iv.clipsToBounds = true
         iv.layer.borderColor = K.rmPurple.cgColor
     
         return iv
@@ -27,6 +28,7 @@ class AboutViewController: UIViewController {
     
     let versionLabel: UILabel = {
         let lbl = UILabel()
+        lbl.textColor = UIColor(named: "text")
         lbl.font = UIFont(name: "AvenirNextCondensed-BoldItalic", size: 20)
         lbl.text = "Version 1.0.0"
         return lbl
@@ -47,7 +49,7 @@ class AboutViewController: UIViewController {
     
     lazy var containerView: UIView = {
         let view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(named: "sheet")
         view.layer.cornerRadius = 16
         view.clipsToBounds = true
         return view

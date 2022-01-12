@@ -28,7 +28,7 @@ class SettingsViewController: UIViewController {
         btn.layer.cornerRadius = 15
         btn.setTitle("Share Us", for: .normal)
         btn.titleLabel?.font = UIFont.monospacedSystemFont(ofSize: 25, weight: .bold)
-        btn.setTitleColor(.white, for: .normal)
+//        btn.setTitleColor(.white, for: .normal)
         return btn
     }()
     
@@ -40,7 +40,7 @@ class SettingsViewController: UIViewController {
         btn.layer.cornerRadius = 15
         btn.setTitle("About Us", for: .normal)
         btn.titleLabel?.font = UIFont.monospacedSystemFont(ofSize: 25, weight: .bold)
-        btn.setTitleColor(.white, for: .normal)
+//        btn.setTitleColor(.white, for: .normal)
         return btn
     }()
     
@@ -89,8 +89,7 @@ class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-        self.navigationController?.navigationBar.backgroundColor = .white
+//        self.navigationController?.navigationBar.backgroundColor = .white
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationBar.isTranslucent = false
         self.presentingViewController?.tabBarController?.tabBar.isHidden = false

@@ -25,7 +25,7 @@ class CharCell: UICollectionViewCell {
         iv.clipsToBounds = true
         iv.layer.borderWidth = 3
         iv.layer.cornerRadius = 10
-        iv.layer.borderColor = K.rmPurple.cgColor
+        iv.layer.borderColor = UIColor(named: "border")?.cgColor
         iv.isUserInteractionEnabled = true
         return iv
     }()

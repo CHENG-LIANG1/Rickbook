@@ -36,6 +36,7 @@ class LocationViewController: UIViewController {
         locationCollectionView.delegate = self
         locationCollectionView.dataSource = self
         locationCollectionView.register(LocationCell.self, forCellWithReuseIdentifier: "LocationCell")
+        locationCollectionView.backgroundColor = UIColor(named: "backgroud")
         locationCollectionView.showsVerticalScrollIndicator = true
         for i in 0..<7 {
             GetLocations(i){
