@@ -18,7 +18,7 @@ class HomeViewController: UIViewController{
     var nextUrl: String?
     var rasterSize: CGFloat = 10.0
 
-    
+
     
     let topButton: UIButton = {
         let btn = UIButton()
@@ -67,6 +67,8 @@ class HomeViewController: UIViewController{
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.title = "826 Characters"
+        
+  
         
         for i in 1..<42 {
             GetCharacters(i){
@@ -176,6 +178,7 @@ extension HomeViewController: CharCellDelegate {
         bottomSheet.charImage = imageView.image
         self.present(bottomSheet, animated: true, completion: nil)
     }
-    
-    
 }
+
+
+

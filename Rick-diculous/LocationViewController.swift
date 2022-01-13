@@ -9,7 +9,7 @@ import UIKit
 
 class LocationViewController: UIViewController {
     let locationCollectionView = Tools.setUpCollectionView(10, 20, 75, (Int(K.screenWidth) - 20 - 32))
-    
+    let searchController = UISearchController(searchResultsController: nil)
     var locationData: LocationData?
     var locationList: [Location] = []
     func GetLocations(_ page: Int, onCompletion:@escaping () -> ()){
@@ -43,8 +43,8 @@ class LocationViewController: UIViewController {
                 self.locationCollectionView.reloadData()
             }
         }
+
         
-        super.viewDidLoad()
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.shadowImage = UIImage()
@@ -77,12 +77,11 @@ extension LocationViewController: UICollectionViewDelegate, UICollectionViewData
         cell.layer.cornerRadius = 10
         
         cell.nameLabel.text = locationList[indexPath.row].name
-        cell.typeLabel.text = "Type: \(locationList[indexPath.row].type)"
+        cell.typeLabel.text = "Type: \(locationList[indexPath.row].type == "" ? "Unkown" : locationList[indexPath.row].type)"
         cell.dimensionLabel.text = "Dimention: \(locationList[indexPath.row].dimension)"
         
         
         return cell
     }
-    
-    
 }
+
