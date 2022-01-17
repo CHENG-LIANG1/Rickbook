@@ -22,6 +22,7 @@
 		FCA02C1F27437D3C00641CB4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA02C1E27437D3C00641CB4 /* SettingsViewController.swift */; };
 		FCA02C212743854600641CB4 /* CharCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA02C202743854600641CB4 /* CharCell.swift */; };
 		FCA02C23274388ED00641CB4 /* CharData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA02C22274388ED00641CB4 /* CharData.swift */; };
+		FCDCD49C27954D1E0039AC9B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDCD49B27954D1E0039AC9B /* SearchViewController.swift */; };
 		FCDFE6652744B0CE0016CD64 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDFE6642744B0CE0016CD64 /* LocationViewController.swift */; };
 		FCDFE6672744B4480016CD64 /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDFE6662744B4480016CD64 /* LocationData.swift */; };
 		FCDFE6692744B5520016CD64 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDFE6682744B5520016CD64 /* LocationCell.swift */; };
@@ -71,6 +72,7 @@
 		FCA02C1E27437D3C00641CB4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FCA02C202743854600641CB4 /* CharCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharCell.swift; sourceTree = "<group>"; };
 		FCA02C22274388ED00641CB4 /* CharData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharData.swift; sourceTree = "<group>"; };
+		FCDCD49B27954D1E0039AC9B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		FCDFE6642744B0CE0016CD64 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		FCDFE6662744B4480016CD64 /* LocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
 		FCDFE6682744B5520016CD64 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				FCDFE6662744B4480016CD64 /* LocationData.swift */,
 				FCDFE6682744B5520016CD64 /* LocationCell.swift */,
 				FCDFE66A274603E30016CD64 /* AboutViewController.swift */,
+				FCDCD49B27954D1E0039AC9B /* SearchViewController.swift */,
 			);
 			path = "Rick-diculous";
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCDCD49C27954D1E0039AC9B /* SearchViewController.swift in Sources */,
 				FCDFE6672744B4480016CD64 /* LocationData.swift in Sources */,
 				FCA02BEA27437B7D00641CB4 /* ViewController.swift in Sources */,
 				FCA02C1927437BE300641CB4 /* K.swift in Sources */,

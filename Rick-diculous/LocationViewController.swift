@@ -30,6 +30,26 @@ class LocationViewController: UIViewController {
         }).resume()
     }
     
+    let searchButton: UIButton = {
+        let btn = UIButton()
+        btn.setImage(UIImage(systemName: "magnifyingglass.circle.fill")?.withRenderingMode(.alwaysOriginal).withTintColor(K.brandYellow), for: .normal)
+        btn.contentVerticalAlignment = .fill
+        btn.contentHorizontalAlignment = .fill
+        btn.backgroundColor = UIColor(named: "background")
+        btn.layer.cornerRadius = 25
+        btn.layer.borderWidth = 5
+        btn.layer.borderColor = K.rmGreen.cgColor
+        Tools.setHeight(btn, 50)
+        Tools.setWidth(btn, 50)
+        return btn
+    }()
+    
+    @objc func searchPressed(sender: UIButton){
+        sender.showAnimation {
+            
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +79,14 @@ class LocationViewController: UIViewController {
             make.bottom.equalTo(view)
         }
         
-        // Do any additional setup after loading the view.
+        
+        searchButton.addTarget(self, action: #selector(searchPressed(sender:)), for: .touchUpInside)
+        view.addSubview(searchButton)
+        searchButton.snp.makeConstraints { make in
+            make.bottom.equalTo(view).offset(-30)
+            make.right.equalTo(view).offset(-30)
+            
+        }
     }
     
 
